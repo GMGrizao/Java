@@ -25,5 +25,30 @@ public class Main {
         //Chamar os metodos
         dogBelga.andar();
         maltes.andar();
+
+        //Chamar o metodo para calcular a dose do remedio 1 a cada 5 kg
+       float doseBelga = dogBelga.caulcularDose(5);
+        System.out.println("Doses necessárias para o " + dogBelga.nome + " é: " + doseBelga);
+
+        float doseMaltes = maltes.caulcularDose(5);
+        System.out.println("Doses necessárias para o " + maltes.nome + " é: "  + doseMaltes);
+
+        //Calcular e exibir a idade humana do dog
+        int idadeBelga = dogBelga.calcularIdade();
+        System.out.println("Idade humana do " + dogBelga.nome + " é: " + idadeBelga);
+
+        int idadeMaltes = maltes.calcularIdade();
+        System.out.println("Idade humana do " + maltes.nome + " é: " + idadeMaltes);
+
+
+        Aluno alunoFiap = new Aluno();
+        alunoFiap.nome = "Guilherme";
+        alunoFiap.cp = 8;
+        alunoFiap.gs = 7;
+        alunoFiap.challenge = 9;
+
+
+        float mediaAluno = alunoFiap.mediaFinal();
+        System.out.println("A média final do " + alunoFiap.nome + " é: " + mediaAluno);
     }
 }
